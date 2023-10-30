@@ -5,7 +5,7 @@ export const WrapperTypeProduct = styled.div`
   display: flex;
   align-item: center;
   justify-content: space-between;
-  margin: 16px 200px 0 200px;
+  margin: 0;
   font-size: 16px;
   height: 40px;
   .child-element:hover {
@@ -23,6 +23,5 @@ export const WrapperButtonMore = styled(ButtonComponent)`
 export const WrapperProduct = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   
 `

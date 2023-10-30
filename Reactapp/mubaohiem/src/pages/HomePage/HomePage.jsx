@@ -6,6 +6,7 @@ import slide1 from "../../assets/images/slides/slide1.jpg";
 import slide2 from "../../assets/images/slides/slide2.jpg";
 import slide3 from "../../assets/images/slides/slide3.jpg";
 import CardComponent from "../../components/CardComponent/CardComponent";
+import { Col, Row } from "antd";
 
 const HomPage = () => {
   const arr = [
@@ -28,20 +29,36 @@ const HomPage = () => {
       <div id="container">
         <SliderComponent arrImages={[slide1, slide2, slide3]} />
         <WrapperProduct>
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
-          <CardComponent />
+            <Col span={4}>
+              <CardComponent />
+            </Col>
+            <Col span={4}>
+              <CardComponent />
+            </Col>
+            <Col span={4}>
+              <CardComponent />
+            </Col>
+            <Col span={4}>
+              <CardComponent />
+            </Col>
+            <Col span={4}>
+              <CardComponent />
+            </Col>
+            <Col span={4}>
+              <CardComponent />
+            </Col>
+            <Col span={4}>
+              <CardComponent />
+            </Col>
         </WrapperProduct>
-        <div style={{display: "flex" , width: "100%", justifyContent:"center", marginTop: "10px"}}>
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            justifyContent: "center",
+            marginTop: "10px",
+          }}
+        >
           <WrapperButtonMore
             textButton="XEM THÊM"
             type="outline"
